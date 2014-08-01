@@ -1,0 +1,16 @@
+/* 
+ * @package noshare4vids.com - build on top of bootstarp 3
+ * @author Andreas Loukakis, alou@alou.gr
+ * 
+ */
+
+/*basic template colors*/
+.blue {color:#3b5998}
+.bluebg {background-color:#3b5998;color:white;}
+.bluebg a {color:white}
+.footer {margin:20px 0 0;color:#999999;display:none;padding:10px 0;background:#f1f1f1;}
+.navbar {min-height:100px;border-bottom:2px solid #3b5998;margin:0 0 20px 0}
+.nav.navbar-right a {transition:all 0.3s linear 9s;background:none;color:#3b5998;}
+.nav.navbar-right a:hover {background:#3b5998;color:white;}
+.served {padding:15px 50px 0 0;color:#999999;}
+#robot {position:absolute;top:-103px;left:50%;margin-left:-250px;}
