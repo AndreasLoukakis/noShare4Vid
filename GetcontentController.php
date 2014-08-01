@@ -13,7 +13,7 @@ class GetcontentController extends \BaseController {
 	public function getAjaxUrl(){
 		$vurl = \Input::get('vidurl');
 		if ( $vurl && $vurl != '' && substr($vurl, 0, 4) == 'http') {
-			require __DIR__.'/../../lib/simple_html_dom.php';
+			require __DIR__.'path/to/simple_html_dom.php';
 			// Create DOM from URL or file
 			$html = file_get_html($vurl);
 			
@@ -50,7 +50,7 @@ class GetcontentController extends \BaseController {
 	public function getUrl(){
 		$vurl = \Input::get('vidurl');
 		if ( $vurl && $vurl != '' && substr($vurl, 0, 4) == 'http') {
-			require __DIR__.'SOME PATH -/simple_html_dom.php';
+			require __DIR__.'path/to/simple_html_dom.php';
 			// Create DOM from URL or file
 			$html = file_get_html($vurl);
 			
