@@ -1,3 +1,7 @@
+/*
+* @package noshare4vids.com
+* @author Andreas Loukakis, alou@alou.gr
+*/
 //This is not the actual index.php file but has all the partials making the html, the server side is via Laravel
 <!DOCTYPE html>
 <html lang="en">
