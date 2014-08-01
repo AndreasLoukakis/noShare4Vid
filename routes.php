@@ -1,5 +1,8 @@
 <?php
-// Home page
+/*
+* @package noshare4vids.com
+* @author Andreas Loukakis, alou@alou.gr
+*/
 Route::get('/', array('as' => 'home', 
  'uses' => 'App\Site\Controllers\GetcontentController@index')
 );
