@@ -17,14 +17,22 @@ class GetcontentController extends \BaseController {
 			// Create DOM from URL or file
 			$html = file_get_html($vurl);
 			
-			// Find all videos
-			$videos = $html->find('div.youtubeblocker');
+			// Find hidden video patterns
+			$videosA = $html->find('div.youtubeblocker');
+			$videosB = $html->find('div.wpvle');
 			
 			$answer = array();
 			$answer['vidids'] = array();
 			$answer['iframes'] = array();
-			foreach($videos as $element) {
+			foreach($videosA as $element) {
 				$answer['vidids'][] = $element->{'data-videoid'};
+			}
+			//made this an array to add more easier in the future, i.e. vimeo etc
+			$vidurls = array('https://www.youtube.com/watch?v=');
+			foreach($videosB as $element) {
+				$fullvidurl = $element->{'data-source'};
+				$idOnly = str_replace($vidurls, "", $fullvidurl);
+				$answer['vidids'][] =$idOnly;
 			}
 			if (count($answer['vidids']) > 0) {
 				$answer['type'] = 'hidden';
