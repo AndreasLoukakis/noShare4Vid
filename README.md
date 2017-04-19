@@ -1,5 +1,6 @@
 noShare4Vid
 ===========
+note: this project is droped.
 
 Basic code of http://noshare4vid.com/
 
